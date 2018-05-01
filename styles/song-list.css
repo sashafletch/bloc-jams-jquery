@@ -64,6 +64,10 @@ td {
   width: 100%;
 }
 
+td:first-child {
+  width: 10px;
+}
+
 tr button {
   border: none;
   background: none;

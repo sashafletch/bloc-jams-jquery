@@ -5,7 +5,7 @@ html {
 body {
   color: white;
   font-family: 'Open Sans', sans-serif;
-  background-image: url(../assets/images/headphone-background.jpg);
+  background-image: url(../assets/images/background-image-blurred.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
@@ -54,26 +54,28 @@ main {
 }
 
 #album-details {
-  margin-bottom: 2rem;
   text-align: left;
+  padding: 0.5rem;
 }
 
 #album-title {
   font-size: 2.5rem;
+  padding: .2rem;
   margin: 0;
 }
 
 h2.artist {
   font-weight: 100;
   font-size: 1.4rem;
-  margin: 0.5rem;
   opacity: 0.9;
+  padding: 0.1rem;
+  margin: 0;
 }
 
 #release-info {
   opacity: 0.5;
   font-size: 0.8rem;
-  margin: 0.5rem;
+  padding: .2rem;
 }
 
 @keyframes fadeIn {
