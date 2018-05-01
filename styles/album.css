@@ -3,13 +3,13 @@ html {
 }
 
 body {
-  background-image: url(../assets/images/blurred_backgrounds/blur_bg_3.jpg);
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  background-image: url(../assets/images/headphone-background.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
   background-size: cover;
-  color: white;
-  font-family: 'Open Sans', sans-serif;
 }
 
 nav {
@@ -29,8 +29,17 @@ main {
   box-sizing: border-box;
 }
 
+.album-details {
+  animation-name: fadeIn;
+  animation-duration: 3s;
+}
+
+
 #album-info {
   overflow: hidden;
+  clear: right;
+  width: 40%;
+  display: inline-block;
 }
 
 #album-cover-art {
@@ -38,7 +47,15 @@ main {
   margin-right: 2rem;
   position: relative;
   width: 250px;
-  max-width: 33%;
+  max-width: 100%;
+  border: .5px solid #323232;
+  border-style: inset;
+  box-shadow: 1px 2px 4px rgba(0,0,0,.5);
+}
+
+#album-details {
+  margin-bottom: 2rem;
+  text-align: left;
 }
 
 #album-title {
@@ -56,7 +73,20 @@ h2.artist {
 #release-info {
   opacity: 0.5;
   font-size: 0.8rem;
+  margin: 0.5rem;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
 
+  to {
+    opacity: 1;
+  }
+}
 
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}

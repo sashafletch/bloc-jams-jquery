@@ -1,10 +1,11 @@
 #song-list {
   border-collapse: collapse;
-  clear: both;
   font-weight: 100;
-  margin-top: 3rem;
   overflow: hidden;
-  width: 100%;
+  width: 60%;
+  float: right;
+  display: inline-block;
+  margin-top: 7rem;
 }
 
 #song-number-column {
@@ -13,6 +14,7 @@
 #song-duration-column {
   width: 80px;
 }
+
 
 tr {
   border-bottom: 1px solid hsla(0, 0%, 100%, 0.1);
@@ -30,10 +32,10 @@ tr.paused .ion-play {
   display: block;
 }
 
-tr .ion-play, 
+tr .ion-play,
 tr .ion-pause,
 tr:hover .song-number,
-tr.playing .ion-play, 
+tr.playing .ion-play,
 tr.playing .song-number,
 tr.paused .ion-pause,
 tr.paused .song-number {
@@ -59,6 +61,7 @@ tr:last-child {
 
 td {
   padding: 0.75rem;
+  width: 100%;
 }
 
 tr button {
@@ -96,9 +99,10 @@ tr.playing button:focus .ion-pause {
 
 .song-title {
   color: hsla(0, 0%, 100%, 0.9);
+  text-align: left;
 }
 
 .song-duration {
-  color: hsla(0, 0%, 100%, 0.5);  
+  color: hsla(0, 0%, 100%, 0.5);
   text-align: right;
 }
